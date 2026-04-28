@@ -44,6 +44,7 @@ app.use(express.json());
 connectDB();
 
 // Routes
+// Routes
 app.use("/api/contact", contactRoutes);
 
 // Root route
