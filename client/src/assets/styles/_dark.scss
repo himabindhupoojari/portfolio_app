@@ -1,0 +1,28 @@
+// _dark.scss
+$backgroundColor: #191919;
+$headerBgColor: #171414;
+$routeContainerBgColor: #252525;
+$buttonBgColor: #176399;
+$buttonColor: #fff;
+$textColorOne: #fff;
+$textColorTwo: #989898;
+$textColorthree: #176399;
+// $textColorthree: #f2f2f2;
+
+// $glassColor: rgba(0, 0, 0, 0.5);
+
+@mixin theme {
+  --bg-color: #{$backgroundColor};
+  --button-bg-color: #{$buttonBgColor};      
+  --button-color: #{$buttonColor};
+  --text-color-one: #{$textColorOne};
+  --text-color-two: #{$textColorTwo};  
+  --route-bg-color: #{$routeContainerBgColor};
+  --header-bg-color: #{$headerBgColor};
+  --text-color-three: #{$textColorthree};
+
+  // --glass-color: #{$glassColor};
+}
+
+// #55005c
+// #7369ff

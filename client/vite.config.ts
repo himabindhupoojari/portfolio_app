@@ -19,9 +19,19 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      "@styles": path.resolve(__dirname, "src/assets/styles"),
       "@layouts": path.resolve(__dirname, "src/layouts"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@pages": path.resolve(__dirname, "src/pages"),
       "@context": path.resolve(__dirname, "src/context"),
       "@hooks": path.resolve(__dirname, "src/hooks"),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+         additionalData: `@use 'sass:color'; @use "@styles/main.scss" as *;`,
+      },
     },
   },
 });

@@ -1,7 +1,13 @@
+import './Footer.scss';
+
 function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <footer className="footer">
+      <p>
+        © {new Date().getFullYear()} HimaBindu P. All rights reserved.
+      </p>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

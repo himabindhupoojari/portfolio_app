@@ -1,0 +1,39 @@
+.portfolio {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  gap: 3rem;
+
+  &__display {
+    // position: sticky;
+    // top: 100px;
+    // width: 40%;
+    // height: fit-content;
+    // padding: 2rem;
+    // border-left: 4px solid var(--text-color-one);
+    
+    h2 {
+      color: var(--text-color-three);
+    }
+    p {
+      color: var(--text-color-two);
+    }
+  }
+
+  &__container {
+    width: 55%;
+  }
+
+  &__card {
+    // height: 50vh;
+    margin-bottom: 4rem;    
+
+    h3 {
+      color: var(--text-color-one);
+    }
+    p {
+      color: var(--text-color-two);
+    }
+  }
+}

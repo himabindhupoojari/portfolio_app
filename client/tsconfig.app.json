@@ -7,7 +7,10 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
     "paths": {
+      "@styles/*": ["./src/assets/styles/*"],
       "@layouts/*": ["./src/layouts/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
       "@context/*": ["./src/context/*"],
       "@hooks/*": ["./src/hooks/*"]
     },

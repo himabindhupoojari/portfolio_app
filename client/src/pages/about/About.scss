@@ -1,0 +1,35 @@
+.about {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    // @include verticalCenterAlignment;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: unset;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &__heading {
+        color: var(--text-color-one);
+    }
+
+    &__subheading {
+        color: var(--text-color-three);
+    }
+
+    &__content {
+        color: var(--text-color-two);
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        background-color: transparent;
+
+        &-btn {
+            background-color: transparent;
+            background-color: var(--button-bg-color);
+            color: var(--button-color);
+        }
+    }
+}

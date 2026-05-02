@@ -1,6 +1,8 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import useTheme  from "@hooks/useTheme";
 import { MdDarkMode, MdLightMode } from "react-icons/md"
+import './Sidebar.scss';
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
     const arr = [

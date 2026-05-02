@@ -1,0 +1,149 @@
+.home {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    color: var(--subheading-color);
+
+    h1 {
+        color: var(--text-color-one);
+    }
+
+    h2 {
+        color: var(--text-color-two);
+    }
+
+    p {
+        color: var(--text-color-two);
+    }
+
+    button {
+        background-color: var(--button-bg-color);
+        color: var(--button-color);
+    }
+
+    .typewriter {
+        color: var(--text-color-three);
+    }
+
+    .typewriter::before {
+        content: "";
+        animation: typing 5s infinite;
+    }
+
+    .typewriter::after {
+        content: "";
+        border-right: 2px solid currentColor;
+        margin-left: 2px;
+        animation: blink 0.7s infinite;
+    }
+
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+
+        a {
+            width: fit-content;
+            color: var(--text-color-three);
+            text-decoration: none;
+            font-size: 1.8rem;
+        }
+    }
+
+}
+
+
+/* Typing animation */
+@keyframes typing {
+    0% {
+        content: "";
+    }
+
+    5% {
+        content: "H";
+    }
+
+    10% {
+        content: "Hi";
+    }
+
+    15% {
+        content: "Him";
+    }
+
+    20% {
+        content: "Hima";
+    }
+
+    25% {
+        content: "Hima ";
+    }
+
+    30% {
+        content: "HimaB";
+    }
+
+    35% {
+        content: "HimaBi";
+    }
+
+    40% {
+        content: "HimaBin";
+    }
+
+    45% {
+        content: "HimaBindu";
+    }
+
+    50% {
+        content: "HimaBindu ";
+    }
+
+    55% {
+        content: "HimaBindu P";
+    }
+
+    60% {
+        content: "HimaBindu Po";
+    }
+
+    65% {
+        content: "HimaBindu Poo";
+    }
+
+    70% {
+        content: "HimaBindu Pooj";
+    }
+
+    75% {
+        content: "HimaBindu Pooja";
+    }
+
+    80% {
+        content: "HimaBindu Poojar";
+    }
+
+    85% {
+        content: "HimaBindu Poojari";
+    }
+
+    95% {
+        content: "HimaBindu Poojari";
+    }
+
+    100% {
+        content: "";
+    }
+}
+
+
+/* Cursor blink */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

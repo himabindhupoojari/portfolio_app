@@ -1,0 +1,85 @@
+// Token-based Theming with SCSS
+
+// --bgColor is considered a design token because:
+
+// It abstracts a design decision
+// Instead of hardcoding blue or yellow, you use a named value: --bgColor. This creates a separation between the value and its usage.
+
+// It’s reusable across components
+// Multiple components (like buttons, cards, tables) can use var(--bgColor), and changing the token value updates all of them.
+
+// It enables consistent theming
+// Tokens help you apply consistent styling across themes (light, dark, etc.) by changing only the value of the token, not every individual rule.
+
+
+// Tool	File	Purpose
+// ESLint	.eslintrc.cjs	Code linting
+// Prettier	.prettierrc	Formatting
+// TypeScript	tsconfig.json	Type-checking and aliases
+// Vite Alias	vite.config.ts	Import path aliases
+// Stylelint	.stylelintrc.json (optional)	SCSS order and linting
+
+// npm install --save-dev stylelint stylelint-order stylelint-scss to add style file order
+
+
+@use './dark.scss' as dark;
+@use './light.scss' as light;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body.light {
+  @include light.theme;
+}
+
+body.dark {
+  @include dark.theme;
+}
+
+body,
+html {
+  font-size: 10px;  
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: "Roboto Slab", serif;
+
+}
+
+h2{
+    font-size: 3rem;
+    font-family: "Roboto Slab", serif;
+}
+
+h3{
+    font-size: 2rem;
+    font-family: "Roboto Slab", serif;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+button {
+  // background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
