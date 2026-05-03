@@ -35,60 +35,15 @@ function Portfolio() {
     }
   ];
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           const target = entry.target as HTMLElement; // type added
-  //           setActiveCard(Number(target.dataset.index));
-  //           console.log(target.dataset.index);
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.6 }
-  //   );
-
-  //   cardRefs.current.forEach((el) => el && observer.observe(el));
-  //   return () => observer.disconnect();
-  // }, []);
-
-  // console.log(activeCard);
-
-
   return (
     <section id="portfolio" className="portfolio">
-
-      {/* Sticky / Fixed Display */}
-      {/* <div className="portfolio__display">
-        <h2>{cards[activeCard].title}</h2>
-        <p>{cards[activeCard].description}</p>
-      </div> */}
-
-      {/* Scrolling Cards */}
-      {/* <div className="portfolio__container">
-        {cards.map((card, index) => (
-          <div
-            className="portfolio__card"
-            key={index}
-            data-index={index}            
-            ref={(el) => {
-              if (el) cardRefs.current[index] = el;
-            }} // type added
-          >
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
-          </div>
-        ))}
-      </div> */}
-
       <div>
         {portfolioData.map((card: portfolioDataType) => (
           <div className="portfolio__card"            
           >
             <h3>{card.title}</h3>
             <p>{card.description}</p>
-            <a href={card.link} target='_blank'>{card.link?? card.link}</a>
+            <a href={card.link} target='_blank' className='portfolio__card-link'>{card.link?? card.link}</a>
           </div>
         ))}
       </div>

@@ -1,0 +1,76 @@
+.contact {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: var(--text-color-three);
+        font-family: "Roboto Slab", serif;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        padding: 12px;
+        // border: 1px solid var(--route-bg-color);
+        // background-color: var(--header-bg-color);
+        border: 1px solid var(--input-border-color);
+        background-color: transparent;
+        border-radius: 8px;
+        color: var(--text-color-two);
+        font-size: 1.6rem;
+        outline: none;
+        transition: 0.2s;
+
+        &:focus {
+            border-color: #ccc;
+        }
+
+        &::placeholder {
+            color: var(--text-color-two);
+        }
+    }
+
+    input:-webkit-autofill,
+    textarea:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+        box-shadow: 0 0 0px 1000px transparent inset !important;
+
+        -webkit-text-fill-color: var(--text-color-two) !important;        
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    button {
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background-color: var(--button-bg-color);
+        color: var(--button-color);
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: 500;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+}

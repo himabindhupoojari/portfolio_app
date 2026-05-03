@@ -22,9 +22,16 @@ function Sidebar() {
             label: 'Portfolio',
         },
         {
+            
             id: 3,
             link: "skills",
             label: 'Skills',
+        },
+        {
+            
+            id: 4,
+            link: "contact",
+            label: 'Contact',
         }
     ]
 

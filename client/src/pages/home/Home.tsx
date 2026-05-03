@@ -40,7 +40,7 @@ function Home() {
 
         <div className="home__actions">
           <a href="/portfolio" className="btn-primary">View Portfolio</a>
-          <a href="#contact" className="btn-secondary">Contact Me</a>
+          <a href="/contact" className="btn-secondary">Contact Me</a>
         </div>      
     </section>
   );

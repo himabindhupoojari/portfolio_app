@@ -16,6 +16,8 @@
     min-height: 100dvh;
     display: grid;
     grid-template-columns: 200px 1fr;
+    background-color: var(--route-bg-color);
+    overflow: hidden;
 }
 
 .main {

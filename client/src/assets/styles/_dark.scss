@@ -7,6 +7,7 @@ $buttonColor: #fff;
 $textColorOne: #fff;
 $textColorTwo: #989898;
 $textColorthree: #176399;
+$inputBorderColor: #171414;
 // $textColorthree: #f2f2f2;
 
 // $glassColor: rgba(0, 0, 0, 0.5);
@@ -20,6 +21,7 @@ $textColorthree: #176399;
   --route-bg-color: #{$routeContainerBgColor};
   --header-bg-color: #{$headerBgColor};
   --text-color-three: #{$textColorthree};
+  --input-border-color: #{$inputBorderColor};
 
   // --glass-color: #{$glassColor};
 }

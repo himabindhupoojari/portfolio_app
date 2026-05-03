@@ -23,10 +23,21 @@ import Sidebar from "@layouts/sidebar/Sidebar";
 // import Footer from "@layouts/footer/Footer";
 import { BrowserRouter } from "react-router-dom";
 import Loader from "@components/loader/Loader";
+import { Toaster } from "react-hot-toast";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          duration: 3000,
+          // style: {
+          //   background: "#333",
+          //   color: "#fff",
+          // },
+        }}
+      />
       <ThemeProvider>
         <Suspense fallback={<div className="loader"><Loader /></div>}>
           <section className="app">
