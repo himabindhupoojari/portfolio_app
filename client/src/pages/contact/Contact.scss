@@ -1,6 +1,6 @@
 .contact {
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
     margin: auto;
 
     h2 {
@@ -8,6 +8,12 @@
         margin-bottom: 20px;
         color: var(--text-color-three);
         font-family: "Roboto Slab", serif;
+    }
+
+    h3{
+        color: var(--text-color-one);
+        margin-bottom: 30px;
+        text-align: center;
     }
 
     &__form {

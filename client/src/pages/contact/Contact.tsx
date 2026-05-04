@@ -95,7 +95,7 @@ function Contact() {
 
             if (!res.ok) throw new Error("Failed to send");
 
-            toast.success("Message sent successfully 🎉");
+            toast.success("🚀 Got your message! I’ll get back to you shortly.");
             setLoading(false);
             setFormData({ name: "", email: "", message: "" });
         } catch (err) {
@@ -107,46 +107,46 @@ function Contact() {
 
     return (
         <>
-            {loading ? <Loader />  :      <div className="contact">
-            <h2>Contact Me</h2>
+            {loading ? <Loader /> : <div className="contact">
+                <h2>Let’s Build Something Together 🚀</h2>
+                <h3>I’m always open to discussing new opportunities, freelance work, or collaborations. Feel free to reach out!</h3>
+                <form onSubmit={handleSubmit} className="contact__form">
+                    <div className="form-group">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter your full name"
+                            value={formData.name}
+                            onChange={handleChange}
+                        />
+                        {errors.name && <span className="error">{errors.name}</span>}
+                    </div>
 
-            <form onSubmit={handleSubmit} className="contact__form">
-                <div className="form-group">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        value={formData.name}
-                        onChange={handleChange}
-                    />
-                    {errors.name && <span className="error">{errors.name}</span>}
-                </div>
+                    <div className="form-group">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            value={formData.email}
+                            onChange={handleChange}
+                        />
+                        {errors.email && <span className="error">{errors.email}</span>}
+                    </div>
 
-                <div className="form-group">
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
-                        value={formData.email}
-                        onChange={handleChange}
-                    />
-                    {errors.email && <span className="error">{errors.email}</span>}
-                </div>
+                    <div className="form-group">
+                        <textarea
+                            name="message"
+                            placeholder="Tell me about your project or query..."
+                            rows={5}
+                            value={formData.message}
+                            onChange={handleChange}
+                        />
+                        {errors.message && <span className="error">{errors.message}</span>}
+                    </div>
 
-                <div className="form-group">
-                    <textarea
-                        name="message"
-                        placeholder="Your Message"
-                        rows={5}
-                        value={formData.message}
-                        onChange={handleChange}
-                    />
-                    {errors.message && <span className="error">{errors.message}</span>}
-                </div>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>}
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>}
         </>
     );
 }
