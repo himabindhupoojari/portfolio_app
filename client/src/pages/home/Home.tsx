@@ -1,4 +1,5 @@
 // import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Home.scss";
 
 function Home() {
@@ -39,8 +40,8 @@ function Home() {
         </p> */}
 
         <div className="home__actions">
-          <a href="/portfolio" className="btn-primary">View Portfolio</a>
-          <a href="/contact" className="btn-secondary">Contact Me</a>
+          <NavLink to="/portfolio" className="btn-primary">View Portfolio</NavLink>
+          <NavLink to="/contact" className="btn-secondary">Contact Me</NavLink>
         </div>      
     </section>
   );
