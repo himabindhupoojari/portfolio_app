@@ -27,13 +27,14 @@
 }
 
 .route-container {
+    width: 100%;
     flex: 1;
     display: grid;
     place-items: center;
     background-color: var(--route-bg-color);
     animation: slideIn 300ms ease-in-out;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto;    
 }
 
 .content {
@@ -50,5 +51,26 @@
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@media (width<=500px) {
+    .app {
+        
+        min-height: unset;    
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        overflow-y: auto;
+        overflow: unset;        
+    }
+
+    .main {    
+        align-items: center;        
+        width: 97%;
+        margin: 0px auto;
+        height: 100%;
+        min-height: 89dvh;
+        padding: 0px 0px 0px 10px;
     }
 }

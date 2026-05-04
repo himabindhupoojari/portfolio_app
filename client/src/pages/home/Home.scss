@@ -147,3 +147,9 @@
         opacity: 0;
     }
 }
+
+@media (width<= 500px){
+    .home{
+        align-items: flex-start;
+    }
+}
