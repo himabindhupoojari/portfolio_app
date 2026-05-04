@@ -1,5 +1,5 @@
 import './About.scss';
-import resume from '/documents/HimaBindu_Resume.pdf';
+import resume from '/documents/HimaBindu_Frontend_Developer.pdf';
 
 function About() {
   return (
@@ -38,7 +38,7 @@ function About() {
         industry standards.
       </p>
       
-      <a className='about__link' href={resume} download="HimaBinduPoojari_FrontendDeveloper_Resume.pdf" target='_blank' rel="noopener noreferrer">
+      <a className='about__link' href={resume} download="HimaBindu_Frontend_Developer.pdf" target='_blank' rel="noopener noreferrer">
         <button className='about__link-btn'>Download Resume</button>
       </a>
     </section>
