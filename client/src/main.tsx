@@ -39,7 +39,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         }}
       />
       <ThemeProvider>
-        <Suspense fallback={<div className="loader"><Loader /></div>}>
+        <Suspense fallback={<Loader/>}>
           <section className="app">
             {/* <Sidebar />
           <div className="app-container">
