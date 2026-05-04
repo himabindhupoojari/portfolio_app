@@ -26,6 +26,7 @@ export default defineConfig({
       "@context": path.resolve(__dirname, "src/context"),
       "@hooks": path.resolve(__dirname, "src/hooks"),
     },
+    dedupe: ["react", "react-dom"], // ✅ prevents duplicate react
   },
   css: {
     preprocessorOptions: {
