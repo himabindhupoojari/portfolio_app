@@ -38,9 +38,9 @@ function About() {
         industry standards.
       </p>
       
-      <a className='about__link' href={resume} download="HimaBindu_Frontend_Developer.pdf" target='_blank' rel="noopener noreferrer">
+      {/* <a className='about__link' href={resume} download="HimaBindu_Frontend_Developer.pdf" target='_blank' rel="noopener noreferrer">
         <button className='about__link-btn'>Download Resume</button>
-      </a>
+      </a> */}
     </section>
   );
 }
