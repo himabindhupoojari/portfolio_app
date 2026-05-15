@@ -1,5 +1,5 @@
 import './About.scss';
-import resume from '/documents/HimaBindu_Frontend_Developer.pdf';
+// import resume from '/documents/HimaBindu_Frontend_Developer.pdf';
 
 function About() {
   return (
